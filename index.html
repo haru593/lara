@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Rock+Salt&display=swap" rel="stylesheet">
+    <title>Number System Conversion</title>
+    <link rel="stylesheet" href="lara.css">
+</head>
+<body>
+
+<!-- Header -->
+<header id="main-header">
+    <img src="logo.png" alt="Logo"> 
+    <h1>Web of Numbers</h1>
+</header>
+
+<!-- Navigation -->
+<nav id="main-nav">
+    <a href="javascript:void(0)" onclick="showSection('home')">Home</a>
+    <a href="javascript:void(0)" onclick="showSection('about')">About</a>
+    <a href="javascript:void(0)" onclick="showSection('example')">Example</a>
+    <a href="javascript:void(0)" onclick="showSection('feedback')">Feedback</a>
+</nav>
+
+<!-- Home Section -->
+<div id="home" class="container">
+    <h2>Convert Numbers Between Systems</h2>
+    <label for="number">Enter Number:</label>
+    <input type="number" id="number" placeholder="Enter a number" oninput="convertNumber()" />
+    <h3>Converted Values:</h3>
+    <div id="decimal-box" class="result-box">Decimal: </div>
+    <div id="binary-box" class="result-box">Binary: </div>
+    <div id="octal-box" class="result-box">Octal: </div>
+    <div id="hexadecimal-box" class="result-box">Hexadecimal: </div>
+</div>
+
+<!-- About Section -->
+<div id="about" class="container">
+    <h2>About</h2>
+    <p>
+        This tool brings the power of number system conversions right to your fingertips—making complex calculations simple, fast, and fun for everyone! Inspired by a love for Spider-Man, the design captures the web-slinging hero’s spirit, adding a bit of fun to your conversions.
+    </p>
+</div>
+
+<!-- Example Section -->
+<div id="example" class="container">
+    <h2>Conversion Table Example</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Binary</th>
+                    <th>Decimal</th>
+                    <th>Octal</th>
+                    <th>Hexadecimal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+                <tr><td>10</td><td>2</td><td>2</td><td>2</td></tr>
+                <tr><td>11</td><td>3</td><td>3</td><td>3</td></tr>
+                <tr><td>100</td><td>4</td><td>4</td><td>4</td></tr>
+                <tr><td>101</td><td>5</td><td>5</td><td>5</td></tr>
+                <tr><td>110</td><td>6</td><td>6</td><td>6</td></tr>
+                <tr><td>111</td><td>7</td><td>7</td><td>7</td></tr>
+                <tr><td>1000</td><td>8</td><td>8</td><td>8</td></tr>
+                <tr><td>1001</td><td>9</td><td>9</td><td>9</td></tr>
+                <tr><td>1010</td><td>10</td><td>10</td><td>A</td></tr>
+                <tr><td>1011</td><td>11</td><td>11</td><td>B</td></tr>
+                <tr><td>1100</td><td>12</td><td>12</td><td>C</td></tr>
+                <tr><td>1101</td><td>13</td><td>13</td><td>D</td></tr>
+                <tr><td>1110</td><td>14</td><td>14</td><td>E</td></tr>
+                <tr><td>1111</td><td>15</td><td>17</td><td>F</td></tr>
+                <tr><td>10000</td><td>16</td><td>20</td><td>10</td></tr>
+                <tr><td>10001</td><td>17</td><td>21</td><td>11</td></tr>
+                <tr><td>10010</td><td>18</td><td>22</td><td>12</td></tr>
+                <tr><td>10011</td><td>19</td><td>23</td><td>13</td></tr>
+                <tr><td>10100</td><td>20</td><td>24</td><td>14</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Feedback Section -->
+<div id="feedback" class="container">
+    <h2>Feedback</h2>
+    <form onsubmit="submitFeedback(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+        <label for="feedback">Your Feedback:</label>
+        <textarea id="feedback" required></textarea>
+        <button type="submit">Submit Feedback</button>
+    </form>
+</div>
+
+<footer>
+    &copy; Number System Conversion
+</footer>
+<script src="lara.js"></script>
+</body>
+</html>

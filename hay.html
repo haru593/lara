@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Number System Conversion</title>
+    
+    <style>
+        /* General Styles */
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(cover.png);
+            color: #fff; /* White text */
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            background: #0a0a0a; /* Black header */
+            color: #ffcc00; /* Yellow text */
+            padding: 1rem;
+            border: 2px solid #ffcc00; /* Yellow border around header */
+        }
+
+        header img {
+            height: 60px; /* Adjust logo size */
+            margin-right: 1rem; /* Space between logo and text */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #0a0a0a;
+            border: 2px solid #ffcc00; /* Yellow border around navigation */
+        }
+
+        nav a {
+            color: #ffcc00;
+            text-decoration: none;
+            padding: 1rem;
+            margin: 0 0.5rem;
+            border: 2px solid #ffcc00; /* Add border around links */
+        }
+
+        nav a:hover {
+            background: #f2f2f2;
+            color: #e10600;
+        }
+
+        .container {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background-color: #1a1a1a; /* Dark background for container */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: none; /* Hide sections initially */
+            border: 2px solid #ffcc00; /* Yellow border around each section */
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        /* Welcome Page Styles */
+        #welcome-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(WOW.png);
+            background-size: cover;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        #welcome-page h1 {
+            font-family: 'Rock Salt';
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        #welcome-page p {
+            font-size: 1.8rem;
+            margin-top: 1rem;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .btn-start {
+            background-color: #ffcc00;
+            color: #e10600;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            margin-top: 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .btn-start:hover {
+            background-color: #f2f2f2;
+            color: #e10600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #0a0a0a;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 2px solid #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <!-- Welcome Page -->
+    <div id="welcome-page">
+        <h1>Web of number</h1>
+        <p>Explore the web of numbers and convert with ease.</p>
+        <button class="btn-start" onclick="window.location.href='index.html'">Enter</button>
+    </div>
+
+    

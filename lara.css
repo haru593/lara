@@ -4,9 +4,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url(WOW.png);
+            background-image: url(cover.png);
             background-size: cover;
-            color: #fff; /* White text */
         }
         header {
             display: flex;

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <style>
+        body {
+          background-image: url(3.jpg);
+          background-color: #064405;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          color: black;
+          font-family: 'Arial', sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+        .details {
+            text-align: center;
+            margin: 10px;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        .answers {
+            width: 25%;
+            margin: 10px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid; 
+            padding: 10px;
+            font-size: 13px;
+        }
+        .binary, .decimal, .hexadecimal, .octal {
+            width: 20%;
+            margin: 10px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid; 
+            padding: 10px;
+            font-size: 15px;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .main
+        {
+            text-align: left;
+            border: 1px solid #000000;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .home
+        {
+            border: 1px solid;
+            padding: 10px;
+            background-color: white;
+            text-align: center;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        li {
+            text-align: left;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="details">
+        <div class="home">
+            <nav>
+                <ul>
+                    <a href="index.html">Home</a>
+                    <a href= "website.html"> Conversion</a>
+                    <a href= "about.html"> About</a>
+                    <a href="contact.html">Contact</a>
+                    
+                </ul>
+            </nav>
+             </div>
+        <h1>Number Base Converter</h1>
+        <div class="main">
+            <p>Arithmetic number conversion refers to the process of transforming numbers from one numerical base (or radix) to another. This is crucial in various fields, including computer science, mathematics, and engineering, where different number systems are used for different purposes. Here's an overview of the common number systems and the methods for converting between them: </p>
+            <h3>Common Number Systems</h3>
+            <ol>
+                <li>Decimal (Base-10): The most familiar system, used in everyday life. </li>    
+                <li>Binary (Base-2): Used extensively in computer systems. </li>
+                <li>Octal (Base-8): Sometimes used in computer science for its compact representation of binary numbers. </li>
+                <li>Hexadecimal (Base-16): Widely used in computer science for its efficiency in representing binary-coded values. </li>
+            </ol>
+            <h3>Conversion Methods</h3>
+            <ol>    
+                <li><h4>Decimal to Binary</h4></li>
+                <p>Method: Divide the decimal number by 2 and record the remainder. Repeat with the quotient until the quotient is 0. The binary number is the sequence of remainders read from bottom to top.</p>
+                <p>Example: Convert 13 (decimal) to binary.</p>
+                <ul>
+                    <li>13 ÷ 2 = 6 remainder 1</li>
+                    <li>6 ÷ 2 = 3 remainder 0</li>
+                    <li>3 ÷ 2 = 1 remainder 1</li>
+                    <li>1 ÷ 2 = 0 remainder 1</li>
+                    <li>Binary: 1101</li>
+                </ul>
+
+                <li><h4>Binary to Decimal</h4></li>
+                <p>Method: Multiply each binary digit by 2 raised to the power of its position (starting from 0 on the right) and sum the results.</p>
+                <p>Example: Convert 1101 (binary) to decimal.</p>
+                <ul>
+                    <li>1 * 2³ + 1 * 2² + 0 * 2¹ + 1 * 2⁰</li> 
+                    <li>8 + 4 + 0 + 1 = 13</li>                   
+                </ul>
+
+                <li><h4>Decimal to Octal</h4></li>
+                <p>Method: Divide the decimal number by 8 and record the remainder. Repeat with the quotient until the quotient is 0. The octal number is the sequence of remainders read from bottom to top.</p>
+                <p>Example: Convert 71 (decimal) to octal.</p>
+                <ul>
+                    <li>71 ÷ 8 = 8 remainder 7</li>
+                    <li>8 ÷ 8 = 1 remainder 0</li>
+                    <li>1 ÷ 8 = 0 remainder 1</li>
+                    <li>Octal: 107</li>
+                </ul>    
+
+                <li><h4>Octal to Decimal</h4></li>
+                <p>Method: Multiply each octal digit by 8 raised to the power of its position (starting from 0 on the right) and sum the results.</p>
+                <p>Example: Convert 107 (octal) to decimal. </p>
+                <ul>
+                    <li>1 * 8² + 0 * 8¹ + 7 * 8⁰</li>
+                    <li>64 + 0 + 7 = 71</li>
+                </ul>
+
+                <li><h4>Decimal to Hexadecimal</h4></li>
+                <p>Method: Divide the decimal number by 16 and record the remainder. Repeat with the quotient until the quotient is 0. The hexadecimal number is the sequence of remainders read from bottom to top.</p>
+                <p>Example: Convert 2748 (decimal) to hexadecimal.</p>
+                <ul>
+                    <li>2748 ÷ 16 = 171 remainder 12 (C in hex)</li>
+                    <li>171 ÷ 16 = 10 remainder 11 (B in hex)</li>
+                    <li>10 ÷ 16 = 0 remainder 10 (A in hex)</li>
+                    <li>Hexadecimal: ABC</li>
+                </ul>
+
+                <li><h4>Hexadecimal to Decimal</h4></li>
+                <p>Method: Multiply each hexadecimal digit by 16 raised to the power of its position (starting from 0 on the right) and sum the results.</p>
+                <p>Example: Convert ABC (hexadecimal) to decimal.</p>
+                <ul>
+                    <li>A * 16² + B * 16¹ + C * 16⁰</li>
+                    <li>10 * 256 + 11 * 16 + 12 * 1</li>
+                    <li>2560 + 176 + 12 = 2748</li>
+                </ul>
+            </ol>      
+            <h3>Additional Conversions</h3>   
+
+            <ul>   
+            <p>Binary to Octal: Group binary digits into sets of three (starting from the right) and convert each group to its octal equivalent.</p>   
+            <p>Binary to Hexadecimal: Group binary digits into sets of four (starting from the right) and convert each group to its hexadecimal equivalent.</p>
+            <p>Octal to Binary: Convert each octal digit to its three-digit binary equivalent.</p>
+            <p>Hexadecimal to Binary: Convert each hexadecimal digit to its four-digit binary equivalent.</p>
+            </ul>
+
+            <h3>Practical Applications</h3>
+            <ul>
+                <p>Computer Science: Binary and hexadecimal are essential for understanding how data is stored and processed in computers.</p>
+                <p>Engineering: Different number systems are used in various engineering applications, such as digital circuits and communication systems.</p>
+                <p>Mathematics: Understanding number systems and conversions is fundamental in various mathematical disciplines.</p>
+            </ul>
+            <p>Arithmetic number conversion is a foundational skill that enables effective communication and problem-solving across different numerical bases.</p>
+
+            <h4>Some video resources to learn more about Number Conversion</h4>
+            <ol>
+                <li><a href="https://www.youtube.com/watch?v=FFDMzbrEXaE&t=388s">Number Systems Introduction - Decimal, Binary, Octal & Hexadecimal </a></li>
+                <li><a href="https://www.youtube.com/watch?v=E-Sg2YsvZds">Number System Conversion Techniques |Very Easy|Fast |Decimal |Binary|Octal |Hexadecimal| Info pack. </a></li>
+                <li><a href="https://www.youtube.com/watch?v=BOorQZYz5Ho&list=PLIY8eNdw5tW-7O05I-ozbIrSUCjyD99Lw">Playlist of Number system & Conversion</a></li>
+            </ol>
+        </div>
+    </div>
+    <script>
+        function decimalToOthers(decimal) {
+            return {
+                binary: (decimal >>> 0).toString(2),                                                                                                                                                                                                                                                                                                                                                                                 
+                hexadecimal: decimal.toString(16).toUpperCase(), 
+                octal: (decimal >>> 0).toString(8),       
+            };
+        }
+
+        document.getElementById('inputNumber').addEventListener('input', function() {
+            var inputNumber = document.getElementById('inputNumber').value;
+            var decimalValue = parseInt(inputNumber, 10);
+
+            if (isNaN(decimalValue)) {
+                document.getElementById('binaryResult').textContent = 'N/A';
+                document.getElementById('decimalResult').textContent = 'N/A';
+                document.getElementById('hexadecimalResult').textContent = 'N/A';
+                document.getElementById('octalResult').textContent = 'N/A';
+                return;
+            }
+
+            var convertedValues = decimalToOthers(decimalValue);
+
+            document.getElementById('binaryResult').textContent = convertedValues.binary;
+            document.getElementById('decimalResult').textContent = decimalValue;
+            document.getElementById('hexadecimalResult').textContent = convertedValues.hexadecimal;
+            document.getElementById('octalResult').textContent = convertedValues.octal;
+        });
+    </script>
+</body>
+</html>

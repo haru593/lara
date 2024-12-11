@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Conversion</title>
     <style>
         body {
           background-image: url(3.jpg);
@@ -35,8 +35,12 @@
             margin: 10px;
             background-color: rgb(255, 255, 255);
             border: 1px solid; 
-            padding: 10px;
             font-size: 15px;
+            text-align: center;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         input[type="text"] {
             width: 200px;
@@ -52,6 +56,10 @@
             padding: 20px;
             border-radius: 10px;
             background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            gap: 20px; 
+            margin-top: 20px;
         }
         .home
         {
@@ -83,12 +91,30 @@
                 </ul>
             </nav>
              </div>
-        <h1>Number Base Converter</h1>
-             <div class="main">
-                <p>A number base converter is a tool or method used to transform numbers from one numerical base (or radix) to another, such as converting between decimal (base-10), binary (base-2), octal (base-8), and hexadecimal (base-16). This process is essential in fields like computer science, mathematics, and engineering, where different number systems are used for various purposes. Conversion methods typically involve dividing the number by the target base and recording remainders, or multiplying digits by powers of the base and summing the results. Understanding and performing these conversions is crucial for tasks such as data storage, digital circuit design, and mathematical problem-solving.</p>
-                <img src="1.jpg" alt="number-conversion">
-                <p>For more information -- GO TO <a href="about.html"><strong>ABOUT PAGE</strong></a></p>
-            </div>
+        <h1>Number Base Converter</h1>                                                                                            
+        <p>Convert to</p>
+        <p>Binary | Hexadecimal | Octal </p>
+
+        <input type="text" id="inputNumber" placeholder="Decimal"/>
+        <div class="main">
+        <div class="binary">
+            <h4> Binary </h4>
+            <p id="binaryResult">N/A</p>
+            
+        </div>
+        <div class="decimal">
+            <h4> Decimal </h4>
+            <p id="decimalResult">N/A</p>
+        </div>
+        <div class="hexadecimal">
+            <h4> Hexadecimal </h4>
+            <p id="hexadecimalResult">N/A</p>
+        </div>
+        <div class="octal">
+            <h4> Octal </h4>
+            <p id="octalResult">N/A</p>
+        </div>
+        </div>
     </div>
     <script>
         function decimalToOthers(decimal) {
